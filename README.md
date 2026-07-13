@@ -22,10 +22,10 @@ Tested whether my camera was working. Confirmed it was. Then I set up the range 
 
 <img width="800" height="674" alt="ScreenRecording2026-07-13at4 18 24PM-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/86daa882-5ad6-463d-b6f2-a5bb169f26c9" />
 
-## STEP 2: DRAWING
+### STEP 2: DRAWING
 Made an empty list that collects my coordinates and appends to it with every stroke. pressing C on your keybaord clears the artwork in green. Your object, in this case a blue pen, can now be used a stylus to draw doodles in the air. 
 
-## STEP 3: THE GAME LOGIC, DETECTION & USER INTERFACE
+### STEP 3: THE GAME LOGIC, DETECTION & USER INTERFACE
 The math calculates the distances between the start and end points. 
 * For a circle it checks if the start and end points are very close and if bounding box is nearly a square.
 * For a horizontal line, if overall direction moves from left to right and bounding box is wider than taller (i.e width>height).
@@ -33,8 +33,28 @@ The math calculates the distances between the start and end points.
 
 In the upper left corner is your status board. It tells you your score, the spell you have to cast and if you make a mistake, the system tells you what shape it detected.
 
-## Modules Used
-This project was
+## Functions Used
+
+## Prerequisites
+This project was built with Python 3
+Modules used are:
+* `cv2`
+* `numpy`
+* `time`
+* `math`
+
+## How to Run
+
+To clone this repository:
+```bash
+git clone https://github.com/shadow-edge9/Magic-Spell-Caster
+cd Magic-Spell-Caster
+```
+
+To run:
+```bash
+python3 spell_caster.py
+```
 
 
 
