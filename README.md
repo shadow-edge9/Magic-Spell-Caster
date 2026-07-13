@@ -72,10 +72,16 @@ In the upper left corner is your status board. It tells you your score, the spel
 ## Prerequisites
 This project was built with Python 3
 Modules used are:
-* `cv2`
+* `cv2` (OpenCV)
 * `numpy`
 * `time`
 * `math`
+
+To install the modules required type this in your terminal (within PyCharm for .venv users)
+```bash
+pip install opencv-python numpy
+```
+> For Mac users, please replace pip with pip3
 
 ## How to Run
 
