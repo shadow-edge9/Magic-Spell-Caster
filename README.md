@@ -4,6 +4,11 @@ CEAM TASK : Make a project using OpenCV.
 ## Project Overview
 Inspired by the Google Halloween Doodles featuring Momo the Magic Cat, I built a project using OpenCV that turns your drawings into a spell casting magical experience.
 
+<img width="1003" height="492" alt="Screenshot 2026-07-13 at 5 22 54 PM" src="https://github.com/user-attachments/assets/8cd24b5c-8e44-43b0-8666-b3f53135cd4f" />
+<img width="1003" height="492" alt="Screenshot 2026-07-13 at 5 23 35 PM" src="https://github.com/user-attachments/assets/4e9410d7-4fc0-4177-bf9c-7d557d8906c5" />
+<img width="1003" height="492" alt="Screenshot 2026-07-13 at 5 24 21 PM" src="https://github.com/user-attachments/assets/79264f2e-f6e9-4d51-bfe3-1749c2e27769" />
+
+
 ## Gameplay
 * You need a physical "wand", and it must be blue, like a blue pen.
 * There are four "spells" you can "cast" (draw) :
