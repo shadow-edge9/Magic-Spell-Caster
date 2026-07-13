@@ -23,6 +23,9 @@ Inspired by the Google Halloween Doodles featuring Momo the Magic Cat, I built a
 
 > NOTE: The tracking works best if your background doesn't have anything blue. A plain background works best.
 
+<img width="740" height="480" alt="1783954854547367-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/40578a34-54b0-4f7e-8b90-87d769d8b7ce" />
+
+
 ## Technical Documentation
 
 ### STEP 1: THE MASK LAYER
