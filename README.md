@@ -12,6 +12,9 @@ Inspired by the Google Halloween Doodles featuring Momo the Magic Cat, I built a
   - A Downward caret (V)
   - A Circle
 * Use your "wand" to "cast" the "spell". If it matches you get a point!
+* If your drawing isn't neat and you want to clear the screen, press 'C' on your keyboard.
+* To submit the drawing, press spacebar.
+* To exit press 'Q' on your keybaord.
 
 > NOTE: The tracking works best if your background doesn't have anything blue. A plain background works best.
 
@@ -33,7 +36,30 @@ The math calculates the distances between the start and end points.
 
 In the upper left corner is your status board. It tells you your score, the spell you have to cast and if you make a mistake, the system tells you what shape it detected.
 
-## Functions Used
+## OpenCV Functions Used
+
+| Function | What it does (Plain English) | How I used it in my project |
+| :--- | :--- | :--- |
+| **`cv2.VideoCapture()`** | Turns on the camera. | Opens default webcam (`0`) to capture live video frames. |
+| **`cv2.flip()`** | Flips the video feed. | Mirrors the camera feed horizontally so moving your hand left moves the drawing left. |
+| **`cv2.GaussianBlur()`** | Blurs the image. | Smooths out pixel noise and grainy background details so tracking is cleaner. |
+| **`cv2.cvtColor()`** | Changes color modes. | Converts the video from normal BGR color to HSV mode, making it easier to track color ranges. |
+| **`cv2.inRange()`** | Filters for a specific color. | Creates a black-and-white mask where only the blue pen shows up as white. |
+| **`cv2.erode()`** | Shrinks white spots. | Cleans up the mask by erasing tiny, accidental blue dots from the background. |
+| **`cv2.dilate()`** | Expands white spots. | Makes the remaining white spots bigger so the computer clearly sees the pen tip. |
+| **`cv2.findContours()`** | Finds shapes/outlines. | Traces the outlines of the white shapes left on the black-and-white mask. |
+| **`cv2.contourArea()`** | Measures the size of a shape. | Checks the size of outlines so the code ignores tiny reflections or huge blue shirts. |
+| **`cv2.minEnclosingCircle()`** | Fits a circle around a shape. | Finds the exact center point and width of the pen tip to lock onto it. |
+| **`cv2.moments()`** | Finds the center of gravity (COM) | Calculates the exact mathematical center coordinate of the tracked pen. |
+| **`cv2.circle()`** | Draws a circle. | Draws a small tracking dot on the screen exactly where the pen is located. |
+| **`cv2.line()`** | Draws a straight line. | Connects saved tracking coordinates together to draw the magical ink trail. |
+| **`cv2.addWeighted()`** | Blends two images together. | Overlays drawing canvas on top of the live webcam feed with transparency. |
+| **`cv2.rectangle()`** | Draws a box. | Creates the dark boxes and neon borders used to build the game's score display UI. |
+| **`cv2.putText()`** | Writes text on the screen. | Displays the target spells, player score, and current system messages on the screen. |
+| **`cv2.imshow()`** | Opens a display window. | Creates the actual desktop game window so you can watch the program run. |
+| **`cv2.waitKey()`** | Waits for keyboard buttons. | Keeps the game running smoothly and checks if I press `SPACE` to cast, `C` to clear, or `Q` to quit. |
+| **`cap.release()`** | Turns off the camera. | Safely disconnects and shuts down the webcam when the program closes. |
+| **`cv2.destroyAllWindows()`** | Closes windows. | Shuts down all open game windows smoothly when exiting the script. |
 
 ## Prerequisites
 This project was built with Python 3
