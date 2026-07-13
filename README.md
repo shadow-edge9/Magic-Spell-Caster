@@ -46,7 +46,7 @@ In the upper left corner is your status board. It tells you your score, the spel
 
 ## OpenCV Functions Used
 
-| Function | What it does (Plain English) | How I used it in my project |
+| Function | What it does | Usage in *Magic Spell Caster* |
 | :--- | :--- | :--- |
 | **`cv2.VideoCapture()`** | Turns on the camera. | Opens default webcam (`0`) to capture live video frames. |
 | **`cv2.flip()`** | Flips the video feed. | Mirrors the camera feed horizontally so moving your hand left moves the drawing left. |
