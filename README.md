@@ -1,2 +1,7 @@
-# Spell-Caster
-CEAM TASK WEEK 6: Inspired by Google's Halloween Doodle Series featuring Momo the Magic Cat, I built a real-time computer vision spell-casting game in Python, using OpenCV
+# Magic Spell Caster
+CEAM TASK : Make a project using OpenCV.
+
+## Project Overview
+Inspired by the Google Halloween Doodles featuring Momo the Magic Cat, I built a project using OpenCV that turns your drawings into a spell casting magical experience.
+
+
